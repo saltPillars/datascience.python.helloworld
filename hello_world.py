@@ -1,26 +1,33 @@
-name = "ada lovelace"
+# Whitespace Fun
 
-# prints literal string
-print(name)
+# \t adds a tab
+print("\tPython")
 
-# prints Ada Lovelace
-print(name.title())
+# \n adds a new line
+print("Languages:\nPython\nC\nJavaScript")
 
-# prints uppercase
-print(name.upper())
+# can use multiple in one string
+print("Languages:\n\tPython\n\tC\n\tJavascript")
 
-# f-strings are used for formatting
-first_name = "ada"
-last_name = "lovelace"
-full_name = f"{first_name} {last_name}"
-print(full_name)
-print (f"Hello, {full_name.title()}!")
+# Whitespace in a string is considered significant unless otherwise told
+# Whitespace can be removed to sanitize data
 
-# f-strings can be stored in variables
-full_name = f"{first_name} {last_name}"
-message = f"Welcome, {full_name.title()}"
-print(message)
+# .rstrip() removes whitespace from the end of a string
+favorite_language = 'python '
+print(f"{favorite_language}|")
+print(f"{favorite_language.rstrip()}|")
 
-# Use format() if using Python 3.5 or earlier instead of f-strings
-full_name = "{} {}".format(first_name, last_name)
-print(full_name)
+# .rstrip() only removes the whitespace on the fly temporarily
+print(f"{favorite_language}|")
+favorite_language = favorite_language.rstrip()
+print(f"{favorite_language}|")
+
+# .lstrip() removes whitespace from the beginning of a string
+favorite_language = '  python'
+print(f"{favorite_language}")
+print(f"{favorite_language.lstrip()}")
+
+# .strip() removes whitespace from the beginning and end of a stringfavorite_language = '  python'
+favorite_language = '   python    '
+print(f"|{favorite_language}|")
+print(f"|{favorite_language.strip()}|")
