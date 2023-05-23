@@ -1,30 +1,59 @@
-# String Exercises
+# Numbers
 
-# 2-3 Personal Message
-wrestler = "Rhea Ripley"
-message = f"My favorite wrestler is {wrestler}"
-print(message)
+# add (+)
+print(2 + 3)
 
-# 2-4 Name Cases
-name = 'cHad gAble'
-print(name)
-print(name.lower())
-print(name.upper())
-print(name.title())
+# subtract (-)
+print(3 - 2)
 
-# 2-5 Famous Quote
-quote = 'The Rock once said "Ahh shut your mouth, you thong-wearing fatty!"'
-print(quote)
+# multiply (*)
+print(2 * 3)
 
-# 2-6 Famous Quote 2
-wrestler = "the rock"
-quote = "Know your role and shut your mouth"
-message = f'{wrestler.title()} once said, "{quote}".'
-print(message)
+# divide (/)
+print(3 / 2)
 
-# 2-7 Stripping Names
-wrestler = "  \t\t\t\t\tSonya Deville\n\n\n\n   "
-print(f"|{wrestler}|")
-print(f"|{wrestler.lstrip()}|")
-print(f"|{wrestler.rstrip()}|")
-print(f"|{wrestler.strip()}|")
+# exponents (**)
+print(3 ** 2)
+
+# Order of operations is honored
+print(2 + 3 * 4)
+print((2 + 3) * 4)
+
+# Decimals are floats. Integers are whole numbers.
+# Python should handle most floats without intervention as you would expect
+print(0.1 + 0.1)
+print(2 * 0.2)
+
+# Sometimes, however, you can get arbitrary decimal points but it happens in most languages
+# We'll learn to deal with it later
+print(0.2 + 0.1)
+print(3 * 0.1 )
+
+# When dividing any two numbers you'll get a float even if they're integers
+print(4 / 2)
+
+# When mixing integers and floats you'll get a float
+print(1 + 2.0)
+print(2 * 3.0)
+
+# When writing long numbers you can group digits with underscores so the number is more readable
+universe_age = 14_000_000_000
+print(universe_age)
+
+# Python will disregard the underscores when storing the number
+number_one = 1000
+number_two = 10_00
+print(number_one)
+print(number_two)
+
+# Multiple Assignments
+# You can assign values to more than one variable in one line
+x, y, z = 0, 1, 2
+print(f"x: {x}\ny: {y}\nz: {z}")
+
+# Constants
+# Constants are variables that stay the same
+# Names are always capitalized
+MAX_CONNECTIONS = 5000
+print(MAX_CONNECTIONS)
+
